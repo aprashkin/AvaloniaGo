@@ -1,0 +1,82 @@
+
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="390"
+        Width="800" Height="390"
+        x:Class="AvaloniaApplication3.Welcome"
+        Title="AvaloniaApplication3">
+        
+        <Window.Background>
+                <ImageBrush Source="Assets/rayan.png"/>
+        </Window.Background>
+
+        <Grid
+                ShowGridLines="False"
+                ColumnDefinitions=".1* .1* .1* .1*"
+                RowDefinitions=".1* .1* .1*"
+               >
+                <TextBlock
+                        Grid.Column="1"
+                        VerticalAlignment="Bottom"
+                        HorizontalAlignment="Center"
+                        Foreground="Violet"
+                        
+                >
+                        Авторизация
+                </TextBlock>
+                
+                
+                <StackPanel 
+                        Grid.Column="1"
+                        Grid.Row="1">
+                        
+                
+               
+                        
+                <TextBox
+                        Watermark="Enter Email:"
+                        Margin="10 10 "
+                        HorizontalAlignment="Left"
+                        Foreground="black"
+                        Background="BlueViolet"
+                        >
+                        
+                        
+                </TextBox>
+                
+                <TextBox
+                        Watermark="Enter Password:"
+                        HorizontalAlignment="Left"
+                        Margin=" 10 0.1 "
+                        Foreground="Black"
+                        Background="BlueViolet">
+                </TextBox>        
+                
+                <Button
+                        HorizontalAlignment="Left"
+                        Margin=" 10"
+                        
+                        Background="BlueViolet"
+                        Click="Button_On_Enter">
+                        Войти
+                </Button>      
+                        
+               
+                        
+                      
+                </StackPanel>
+                <Button Grid.Column="1"
+                        Grid.Row="2"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Top"
+                        Background="BlueViolet"
+                        Click="Button_On_Reg"
+                >
+                        Еще нет аккаунта?
+                </Button>
+        </Grid>
+       
+
+</Window>
